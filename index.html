@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Contador de Pasos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Contador de Pasos</h1>
+        <div class="input-group">
+            <label for="goal">Meta diaria de pasos:</label>
+            <input type="number" id="goal" min="1" value="10000">
+            <button id="setGoal">Establecer Meta</button>
+        </div>
+        <div class="display">
+            <div id="steps">0</div>
+            <div>pasos</div>
+        </div>
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <div id="percentage">0%</div>
+        <button id="reset">Reiniciar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
